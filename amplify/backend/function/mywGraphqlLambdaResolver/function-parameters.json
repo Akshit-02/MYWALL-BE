@@ -1,0 +1,63 @@
+{
+  "permissions": {
+    "storage": {
+      "mywstorage": [
+        "create",
+        "read",
+        "update"
+      ],
+      "Influencer:@model(appsync)": [
+        "create",
+        "read",
+        "update"
+      ],
+      "YoutubeVideo:@model(appsync)": [
+        "create",
+        "read",
+        "update"
+      ],
+      "FacebookVideo:@model(appsync)": [
+        "create",
+        "read",
+        "update"
+      ],
+      "InstagramVideo:@model(appsync)": [
+        "create",
+        "read",
+        "update"
+      ],
+      "CustomLink:@model(appsync)": [
+        "create",
+        "read",
+        "update"
+      ],
+      "Media:@model(appsync)": [
+        "create",
+        "read",
+        "update"
+      ],
+      "Logo:@model(appsync)": [
+        "create",
+        "read",
+        "update"
+      ],
+      "SubSection:@model(appsync)": [
+        "create",
+        "read",
+        "update"
+      ],
+      "Section:@model(appsync)": [
+        "create",
+        "read",
+        "update"
+      ]
+    }
+  },
+  "lambdaLayers": [],
+  "environmentVariableList": [
+    {
+      "cloudFormationParameterName": "youtubeApiKey",
+      "environmentVariableName": "YOUTUBE_API_KEY"
+    }
+  ]
+}

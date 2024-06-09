@@ -1,0 +1,81 @@
+{
+  "typeName": "Mutation",
+  "fieldName": "sendContactFormEmail",
+  "arguments": {
+    "firstName": "ABC",
+    "lastName": "DEF",
+    "email": "abc@gmail.com",
+    "phoneNumber": "123",
+    "message": "test"
+  },
+  "identity": {
+    "claims": {
+      "sub": "c1137d7a-30a1-70cb-65b2-4ed6a0a0a6aa",
+      "cognito:groups": ["Users"],
+      "email_verified": true,
+      "cognito:preferred_role": "arn:aws:iam::305477704377:role/ap-south-1_vtzTc7fhT-UsersGroupRole",
+      "iss": "https://cognito-idp.ap-south-1.amazonaws.com/ap-south-1_vtzTc7fhT",
+      "cognito:username": "c1137d7a-30a1-70cb-65b2-4ed6a0a0a6aa",
+      "origin_jti": "5897b17d-e249-4747-b628-082d25579bcd",
+      "cognito:roles": [
+        "arn:aws:iam::305477704377:role/ap-south-1_vtzTc7fhT-UsersGroupRole"
+      ],
+      "aud": "574t9vcmdph6r01fj58eukdf8o",
+      "event_id": "2ec8700f-9194-4818-ab47-13d59db50e30",
+      "token_use": "id",
+      "auth_time": 1691645155,
+      "name": "vikas",
+      "exp": 1691648755,
+      "iat": 1691645155,
+      "jti": "421f1fa0-86fa-4643-9d39-d35c8d4bf093",
+      "email": "vikas@devxconsultancy.com"
+    },
+    "defaultAuthStrategy": "ALLOW",
+    "groups": ["Users"],
+    "issuer": "https://cognito-idp.ap-south-1.amazonaws.com/ap-south-1_vtzTc7fhT",
+    "sourceIp": ["43.251.73.69"],
+    "sub": "c1137d7a-30a1-70cb-65b2-4ed6a0a0a6aa",
+    "username": "c1137d7a-30a1-70cb-65b2-4ed6a0a0a6aa"
+  },
+  "source": null,
+  "request": {
+    "headers": {
+      "x-forwarded-for": "43.251.73.69, 130.176.188.108",
+      "sec-ch-ua-mobile": "?0",
+      "cloudfront-viewer-country": "IN",
+      "cloudfront-is-tablet-viewer": "false",
+      "x-amzn-requestid": "5c5a72fd-ec2d-46a3-a078-cade679ced42",
+      "via": "2.0 2ee6c926f0ad04a40388a60fff49c78c.cloudfront.net (CloudFront)",
+      "cloudfront-forwarded-proto": "https",
+      "origin": "https://ap-south-1.console.aws.amazon.com",
+      "content-length": "294",
+      "x-forwarded-proto": "https",
+      "accept-language": "en-GB,en-US;q=0.9,en;q=0.8",
+      "host": "s6d3dsweafawdmzjgz6smiq4ya.appsync-api.ap-south-1.amazonaws.com",
+      "user-agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36",
+      "cloudfront-is-mobile-viewer": "false",
+      "accept": "application/json, text/plain, */*",
+      "cloudfront-viewer-asn": "45916",
+      "cloudfront-is-smarttv-viewer": "false",
+      "x-amzn-appsync-is-vpce-request": "false",
+      "accept-encoding": "gzip, deflate, br",
+      "referer": "https://ap-south-1.console.aws.amazon.com/",
+      "content-type": "application/json",
+      "sec-fetch-mode": "cors",
+      "x-amzn-trace-id": "Root=1-64d4769b-1e592fb61bcfcf6f78096bc7",
+      "x-amz-cf-id": "G8gx_oZbhBlEWcImQukAsLVs2aXacK-_YujZ_hh_vfLth3ijmBE76A==",
+      "authorization": "eyJraWQiOiJrQVA2RURPZFErQ0FlZ2RRWWR2ZXdhQVwvZmdNc01XckNYc010TnZWWXA5az0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiI5MTYzOWQyYS05MGIxLTcwNWYtODZlYi0xODQ2OTdjMzNlYWQiLCJjb2duaXRvOmdyb3VwcyI6WyJVc2VycyJdLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiY29nbml0bzpwcmVmZXJyZWRfcm9sZSI6ImFybjphd3M6aWFtOjozMDU0Nzc3MDQzNzc6cm9sZVwvYXAtc291dGgtMV92dHpUYzdmaFQtVXNlcnNHcm91cFJvbGUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGgtMS5hbWF6b25hd3MuY29tXC9hcC1zb3V0aC0xX3Z0elRjN2ZoVCIsImNvZ25pdG86dXNlcm5hbWUiOiI5MTYzOWQyYS05MGIxLTcwNWYtODZlYi0xODQ2OTdjMzNlYWQiLCJvcmlnaW5fanRpIjoiNTg5N2IxN2QtZTI0OS00NzQ3LWI2MjgtMDgyZDI1NTc5YmNkIiwiY29nbml0bzpyb2xlcyI6WyJhcm46YXdzOmlhbTo6MzA1NDc3NzA0Mzc3OnJvbGVcL2FwLXNvdXRoLTFfdnR6VGM3ZmhULVVzZXJzR3JvdXBSb2xlIl0sImF1ZCI6IjU3NHQ5dmNtZHBoNnIwMWZqNThldWtkZjhvIiwiZXZlbnRfaWQiOiIyZWM4NzAwZi05MTk0LTQ4MTgtYWI0Ny0xM2Q1OWRiNTBlMzAiLCJ0b2tlbl91c2UiOiJpZCIsImF1dGhfdGltZSI6MTY5MTY0NTE1NSwibmFtZSI6InZpa2FzIiwiZXhwIjoxNjkxNjQ4NzU1LCJpYXQiOjE2OTE2NDUxNTUsImp0aSI6IjQyMWYxZmEwLTg2ZmEtNDY0My05ZDM5LWQzNWM4ZDRiZjA5MyIsImVtYWlsIjoidmlrYXNAZGV2eGNvbnN1bHRhbmN5LmNvbSJ9.1-CrqTj9iRPER8lbjlFyqNUjqFWgOBMXraS15Q3thYgcYZq13-1i-Lcl6MuOBpXzWmFqXoBiA95AK-9kY5jtG_3Uk-c4vei9JJizGIpR0T-Lj_Y3MSXZbFbLfHhP3ShJWLQrTyor99moiFbVbQBYusRLAAe-xhXnwaV-Kc3yIhywrwRlg36cN5W7icFG4pvEFBoLVymOPkRQB8nZ0z6QxhMf_sELWYBdD_E0XFsrh6DQco7OXZLMX9p-uH5eg0qe2oSP62GbFftt0326dUlW-I-o-SMtgFe7k4G3TNSgS-fcPphXInSoXm9irXPX7Kf6ntHnPebhu7d6GFEeXshzJg",
+      "sec-fetch-dest": "empty",
+      "x-amz-user-agent": "AWS-Console-AppSync/",
+      "sec-ch-ua-platform": "\"macOS\"",
+      "cloudfront-is-desktop-viewer": "true",
+      "sec-fetch-site": "cross-site",
+      "sec-ch-ua": "\"Not.A/Brand\";v=\"8\", \"Chromium\";v=\"114\", \"Google Chrome\";v=\"114\"",
+      "x-forwarded-port": "443"
+    },
+    "domainName": null
+  },
+  "prev": {
+    "result": {}
+  }
+}

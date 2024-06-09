@@ -1,0 +1,367 @@
+[
+  {
+    "Action": [
+      "dynamodb:Put*",
+      "dynamodb:Create*",
+      "dynamodb:BatchWriteItem",
+      "dynamodb:Get*",
+      "dynamodb:BatchGetItem",
+      "dynamodb:List*",
+      "dynamodb:Describe*",
+      "dynamodb:Scan",
+      "dynamodb:Query",
+      "dynamodb:Update*",
+      "dynamodb:RestoreTable*",
+      "dynamodb:DeleteItem"
+    ],
+    "Resource": [
+      {
+        "Fn::Join": [
+          "",
+          [
+            "arn:aws:dynamodb:",
+            {
+              "Ref": "AWS::Region"
+            },
+            ":",
+            {
+              "Ref": "AWS::AccountId"
+            },
+            ":table/",
+            {
+              "Fn::ImportValue": {
+                "Fn::Sub": "${apimywbackendGraphQLAPIIdOutput}:GetAtt:SubSectionYTItemsTable:Name"
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "Fn::Join": [
+          "",
+          [
+            "arn:aws:dynamodb:",
+            {
+              "Ref": "AWS::Region"
+            },
+            ":",
+            {
+              "Ref": "AWS::AccountId"
+            },
+            ":table/",
+            {
+              "Fn::ImportValue": {
+                "Fn::Sub": "${apimywbackendGraphQLAPIIdOutput}:GetAtt:SubSectionYTItemsTable:Name"
+              }
+            },
+            "/index/*"
+          ]
+        ]
+      },
+
+      {
+        "Fn::Join": [
+          "",
+          [
+            "arn:aws:dynamodb:",
+            {
+              "Ref": "AWS::Region"
+            },
+            ":",
+            {
+              "Ref": "AWS::AccountId"
+            },
+            ":table/",
+            {
+              "Fn::ImportValue": {
+                "Fn::Sub": "${apimywbackendGraphQLAPIIdOutput}:GetAtt:SubSectionFBItemsTable:Name"
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "Fn::Join": [
+          "",
+          [
+            "arn:aws:dynamodb:",
+            {
+              "Ref": "AWS::Region"
+            },
+            ":",
+            {
+              "Ref": "AWS::AccountId"
+            },
+            ":table/",
+            {
+              "Fn::ImportValue": {
+                "Fn::Sub": "${apimywbackendGraphQLAPIIdOutput}:GetAtt:SubSectionFBItemsTable:Name"
+              }
+            },
+            "/index/*"
+          ]
+        ]
+      },
+
+      {
+        "Fn::Join": [
+          "",
+          [
+            "arn:aws:dynamodb:",
+            {
+              "Ref": "AWS::Region"
+            },
+            ":",
+            {
+              "Ref": "AWS::AccountId"
+            },
+            ":table/",
+            {
+              "Fn::ImportValue": {
+                "Fn::Sub": "${apimywbackendGraphQLAPIIdOutput}:GetAtt:SubSectionIGItemsTable:Name"
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "Fn::Join": [
+          "",
+          [
+            "arn:aws:dynamodb:",
+            {
+              "Ref": "AWS::Region"
+            },
+            ":",
+            {
+              "Ref": "AWS::AccountId"
+            },
+            ":table/",
+            {
+              "Fn::ImportValue": {
+                "Fn::Sub": "${apimywbackendGraphQLAPIIdOutput}:GetAtt:SubSectionIGItemsTable:Name"
+              }
+            },
+            "/index/*"
+          ]
+        ]
+      },
+
+      {
+        "Fn::Join": [
+          "",
+          [
+            "arn:aws:dynamodb:",
+            {
+              "Ref": "AWS::Region"
+            },
+            ":",
+            {
+              "Ref": "AWS::AccountId"
+            },
+            ":table/",
+            {
+              "Fn::ImportValue": {
+                "Fn::Sub": "${apimywbackendGraphQLAPIIdOutput}:GetAtt:SubSectionCustomLinksTable:Name"
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "Fn::Join": [
+          "",
+          [
+            "arn:aws:dynamodb:",
+            {
+              "Ref": "AWS::Region"
+            },
+            ":",
+            {
+              "Ref": "AWS::AccountId"
+            },
+            ":table/",
+            {
+              "Fn::ImportValue": {
+                "Fn::Sub": "${apimywbackendGraphQLAPIIdOutput}:GetAtt:SubSectionCustomLinksTable:Name"
+              }
+            },
+            "/index/*"
+          ]
+        ]
+      },
+      {
+        "Fn::Join": [
+          "",
+          [
+            "arn:aws:dynamodb:",
+            {
+              "Ref": "AWS::Region"
+            },
+            ":",
+            {
+              "Ref": "AWS::AccountId"
+            },
+            ":table/",
+            {
+              "Fn::ImportValue": {
+                "Fn::Sub": "${apimywbackendGraphQLAPIIdOutput}:GetAtt:SubSectionMediaItemsTable:Name"
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "Fn::Join": [
+          "",
+          [
+            "arn:aws:dynamodb:",
+            {
+              "Ref": "AWS::Region"
+            },
+            ":",
+            {
+              "Ref": "AWS::AccountId"
+            },
+            ":table/",
+            {
+              "Fn::ImportValue": {
+                "Fn::Sub": "${apimywbackendGraphQLAPIIdOutput}:GetAtt:SubSectionLogoItemsTable:Name"
+              }
+            },
+            "/index/*"
+          ]
+        ]
+      },
+      {
+        "Fn::Join": [
+          "",
+          [
+            "arn:aws:dynamodb:",
+            {
+              "Ref": "AWS::Region"
+            },
+            ":",
+            {
+              "Ref": "AWS::AccountId"
+            },
+            ":table/",
+            {
+              "Fn::ImportValue": {
+                "Fn::Sub": "${apimywbackendGraphQLAPIIdOutput}:GetAtt:SubSectionLogoItemsTable:Name"
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "Fn::Join": [
+          "",
+          [
+            "arn:aws:dynamodb:",
+            {
+              "Ref": "AWS::Region"
+            },
+            ":",
+            {
+              "Ref": "AWS::AccountId"
+            },
+            ":table/",
+            {
+              "Fn::ImportValue": {
+                "Fn::Sub": "${apimywbackendGraphQLAPIIdOutput}:GetAtt:SubSectionMediaItemsTable:Name"
+              }
+            },
+            "/index/*"
+          ]
+        ]
+      },
+      {
+        "Fn::Join": [
+          "",
+          [
+            "arn:aws:dynamodb:",
+            {
+              "Ref": "AWS::Region"
+            },
+            ":",
+            {
+              "Ref": "AWS::AccountId"
+            },
+            ":table/",
+            {
+              "Fn::ImportValue": {
+                "Fn::Sub": "${apimywbackendGraphQLAPIIdOutput}:GetAtt:MediaTable:Name"
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "Fn::Join": [
+          "",
+          [
+            "arn:aws:dynamodb:",
+            {
+              "Ref": "AWS::Region"
+            },
+            ":",
+            {
+              "Ref": "AWS::AccountId"
+            },
+            ":table/",
+            {
+              "Fn::ImportValue": {
+                "Fn::Sub": "${apimywbackendGraphQLAPIIdOutput}:GetAtt:MediaTable:Name"
+              }
+            },
+            "/index/*"
+          ]
+        ]
+      },
+      {
+        "Fn::Join": [
+          "",
+          [
+            "arn:aws:dynamodb:",
+            {
+              "Ref": "AWS::Region"
+            },
+            ":",
+            {
+              "Ref": "AWS::AccountId"
+            },
+            ":table/",
+            {
+              "Fn::ImportValue": {
+                "Fn::Sub": "${apimywbackendGraphQLAPIIdOutput}:GetAtt:LogoTable:Name"
+              }
+            }
+          ]
+        ]
+      },
+      {
+        "Fn::Join": [
+          "",
+          [
+            "arn:aws:dynamodb:",
+            {
+              "Ref": "AWS::Region"
+            },
+            ":",
+            {
+              "Ref": "AWS::AccountId"
+            },
+            ":table/",
+            {
+              "Fn::ImportValue": {
+                "Fn::Sub": "${apimywbackendGraphQLAPIIdOutput}:GetAtt:LogoTable:Name"
+              }
+            },
+            "/index/*"
+          ]
+        ]
+      }
+    ]
+  }
+]
