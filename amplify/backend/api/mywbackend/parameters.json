@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "mywbackend",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authmywauth",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
