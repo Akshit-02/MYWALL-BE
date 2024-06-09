@@ -1,0 +1,134 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mywbackend-dev-164229-authRole",
+      "UnauthRoleArn": "arn:aws:iam::305477704377:role/amplify-mywbackend-dev-164229-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::305477704377:role/amplify-mywbackend-dev-164229-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-mywbackend-dev-164229-deployment",
+      "UnauthRoleName": "amplify-mywbackend-dev-164229-unauthRole",
+      "StackName": "amplify-mywbackend-dev-164229",
+      "StackId": "arn:aws:cloudformation:ap-south-1:305477704377:stack/amplify-mywbackend-dev-164229/d3da9300-1fdb-11ee-89cf-0a0c282c2532",
+      "AmplifyAppId": "d17jalw972vhb5",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-mywbackend-dev-164229-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "auth": {
+        "mywauth": {
+          "facebookAppId": "266818559278205",
+          "googleClientId": "456194616047-766qqr089543mmco3mlcrk4bgpa7nm2g.apps.googleusercontent.com"
+        },
+        "userPoolGroups": {}
+      },
+      "function": {
+        "mywauthPostConfirmation": {
+          "GROUP": "Users",
+          "deploymentBucketName": "amplify-mywbackend-dev-164229-deployment",
+          "s3Key": "amplify-builds/mywauthPostConfirmation-3973444c795832785548-build.zip"
+        },
+        "mywGraphqlLambdaResolver": {
+          "deploymentBucketName": "amplify-mywbackend-dev-164229-deployment",
+          "s3Key": "amplify-builds/mywGraphqlLambdaResolver-68344d6a33392f623230-build.zip",
+          "youtubeApiKey": "AIzaSyCaivk8Jj2W20oxVdKWg6Nml9YLRx188kk"
+        },
+        "mywstorage": {},
+        "mywbackend": {},
+        "mywauth": {}
+      },
+      "storage": {
+        "mywstorage": {}
+      },
+      "api": {
+        "mywbackend": {}
+      }
+    }
+  },
+  "devnew": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mywbackend-devnew-124702-authRole",
+      "UnauthRoleArn": "arn:aws:iam::275053913061:role/amplify-mywbackend-devnew-124702-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::275053913061:role/amplify-mywbackend-devnew-124702-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-mywbackend-devnew-124702-deployment",
+      "UnauthRoleName": "amplify-mywbackend-devnew-124702-unauthRole",
+      "StackName": "amplify-mywbackend-devnew-124702",
+      "StackId": "arn:aws:cloudformation:ap-south-1:275053913061:stack/amplify-mywbackend-devnew-124702/5dd3ed50-dac0-11ee-be96-0606155f89a7",
+      "AmplifyAppId": "d2ygy0i6x1njki",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-mywbackend-devnew-124702-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "auth": {
+        "mywauth": {
+          "facebookAppId": "236337898740968",
+          "googleClientId": "456194616047-766qqr089543mmco3mlcrk4bgpa7nm2g.apps.googleusercontent.com"
+        },
+        "userPoolGroups": {}
+      },
+      "function": {
+        "mywGraphqlLambdaResolver": {
+          "deploymentBucketName": "amplify-mywbackend-devnew-124702-deployment",
+          "s3Key": "amplify-builds/mywGraphqlLambdaResolver-2f35597a6a45554a7056-build.zip",
+          "youtubeApiKey": "AIzaSyCaivk8Jj2W20oxVdKWg6Nml9YLRx188kk"
+        },
+        "mywauthPostConfirmation": {
+          "GROUP": "Users",
+          "deploymentBucketName": "amplify-mywbackend-devnew-124702-deployment",
+          "s3Key": "amplify-builds/mywauthPostConfirmation-3973444c795832785548-build.zip"
+        },
+        "mywstorage": {},
+        "mywbackend": {},
+        "mywauth": {}
+      },
+      "api": {
+        "mywbackend": {}
+      },
+      "storage": {
+        "mywstorage": {}
+      }
+    }
+  },
+  "prod": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mywbackend-prod-160042-authRole",
+      "UnauthRoleArn": "arn:aws:iam::275053913061:role/amplify-mywbackend-prod-160042-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::275053913061:role/amplify-mywbackend-prod-160042-authRole",
+      "Region": "ap-south-1",
+      "DeploymentBucketName": "amplify-mywbackend-prod-160042-deployment",
+      "UnauthRoleName": "amplify-mywbackend-prod-160042-unauthRole",
+      "StackName": "amplify-mywbackend-prod-160042",
+      "StackId": "arn:aws:cloudformation:ap-south-1:275053913061:stack/amplify-mywbackend-prod-160042/6bfa41c0-dadb-11ee-a319-0203b706fb77",
+      "AmplifyAppId": "d2ygy0i6x1njki",
+      "AuthTriggerTemplateURL": "https://s3.amazonaws.com/amplify-mywbackend-prod-160042-deployment/amplify-cfn-templates/auth/auth-trigger-cloudformation-template.json"
+    },
+    "categories": {
+      "auth": {
+        "mywauth": {
+          "facebookAppId": "236337898740968",
+          "googleClientId": "456194616047-766qqr089543mmco3mlcrk4bgpa7nm2g.apps.googleusercontent.com"
+        },
+        "userPoolGroups": {}
+      },
+      "function": {
+        "mywGraphqlLambdaResolver": {
+          "deploymentBucketName": "amplify-mywbackend-prod-160042-deployment",
+          "s3Key": "amplify-builds/mywGraphqlLambdaResolver-2f35597a6a45554a7056-build.zip",
+          "youtubeApiKey": "AIzaSyCaivk8Jj2W20oxVdKWg6Nml9YLRx188kk"
+        },
+        "mywauthPostConfirmation": {
+          "GROUP": "Users",
+          "deploymentBucketName": "amplify-mywbackend-prod-160042-deployment",
+          "s3Key": "amplify-builds/mywauthPostConfirmation-3973444c795832785548-build.zip"
+        },
+        "mywstorage": {},
+        "mywbackend": {},
+        "mywauth": {}
+      },
+      "api": {
+        "mywbackend": {}
+      },
+      "storage": {
+        "mywstorage": {}
+      }
+    }
+  }
+}
